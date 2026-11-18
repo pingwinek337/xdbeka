@@ -1,0 +1,19 @@
+# HitBalance - konfiguracja (mozna tez zmieniac w GUI: /hitbalance)
+
+# Czy balans jest wlaczony
+enabled: true
+
+# Ile % obrazen zmienia kazdy poziom roznicy Sharpness - Protection (0.05 = 5%)
+# Wzor: mnoznik = 1 + (Sharpness - Protection) * step-per-level
+# Rowne poziomy (np. 32 vs 32) = x1.0, Sharp 34 vs Prot 32 = wiecej, Sharp 32 vs Prot 34 = mniej
+step-per-level: 0.05
+
+# Granice mnoznika obrazen
+min-multiplier: 0.10
+max-multiplier: 3.00
+
+# Jak liczyc poziom Protection zbroi: AVERAGE, MAX, MIN
+protection-mode: AVERAGE
+
+# true = balans tylko w PvP (gracz vs gracz), false = rowniez przeciw mobom
+players-only: false

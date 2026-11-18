@@ -1,0 +1,14 @@
+name: HitBalance
+version: 1.0.0
+main: pl.hitbalance.HitBalance
+api-version: '1.21'
+description: Balansowanie hitow na podstawie poziomu Sharpness broni i Protection zbroi
+commands:
+  hitbalance:
+    description: Otwiera GUI balansu hitow
+    aliases: [hb, balans]
+    usage: /hitbalance [reload]
+permissions:
+  hitbalance.admin:
+    description: Dostep do GUI i komendy reload
+    default: op
